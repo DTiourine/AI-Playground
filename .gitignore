@@ -1,0 +1,13 @@
+# intellij configs
+.idea/
+
+#ds_store
+.DS_store
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Data
+EMNIST/data
