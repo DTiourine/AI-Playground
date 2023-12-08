@@ -1,5 +1,8 @@
 import torch
-from emnist_train import
+from emnist_model import EMNISTNet
+
+EMNIST_Model = EMNISTNet()
+EMNIST_Model.load_state_dict(torch.save(torch.load('emnist_model_state_dict.pth')))
 def calculate_accuracy(outputs, labels):
     _, predicted = torch.max(outputs.data, 1)
     total = labels.size(0)

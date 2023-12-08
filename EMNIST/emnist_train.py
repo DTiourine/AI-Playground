@@ -6,7 +6,7 @@ from emnist_data_loader import train_loader
 #print(torch.cuda.is_available())
 EMNIST_Model = EMNISTNet()
 
-device = torch.device("cuda")
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 EMNIST_Model.to(device)
 
 loss_fn = nn.CrossEntropyLoss()
@@ -17,6 +17,7 @@ EPOCHS = 100
 for epoch in range(EPOCHS):
 
     for i, (inputs, labels) in enumerate(train_loader):
+        inputs, labels = inputs.to(device), labels.to(device)
 
         #Forward pass
         outputs = EMNIST_Model(inputs)
