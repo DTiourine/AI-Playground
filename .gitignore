@@ -12,3 +12,7 @@ __pycache__/
 # Data
 EMNIST/data
 FashionMNIST/data
+CIFAR10/data
+
+#ipynb checkpoints
+.ipynb_checkpoints
