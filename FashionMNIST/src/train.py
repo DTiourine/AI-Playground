@@ -1,8 +1,8 @@
 #Instantiate model, define loss, define optimizer
 import torch
 from torch import nn
-from fmnist_model import FMNISTModel
-from fmnist_data_loader import train_dataloader
+from FashionMNIST.src.model import FMNISTModel
+from FashionMNIST.data.data_loader import train_dataloader
 
 import torch.optim as optim
 

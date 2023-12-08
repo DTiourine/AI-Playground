@@ -1,7 +1,7 @@
 import torch
 from torch import nn
-from emnist_model import EMNISTNet
-from emnist_data_loader import train_loader
+from EMNIST.src.emnist_model import EMNISTNet
+from EMNIST.src.data.emnist_data_loader import train_loader
 
 #print(torch.cuda.is_available())
 EMNIST_Model = EMNISTNet()
@@ -31,4 +31,4 @@ for epoch in range(EPOCHS):
         if (i + 1) % 100 == 0:
             print(f'Epoch [{epoch + 1}/{EPOCHS}], Step [{i + 1}/{len(train_loader)}], Loss: {loss.item():.4f}')
 
-torch.save(EMNIST_Model.state_dict(), 'emnist_model_state_dict.pth')
+torch.save(EMNIST_Model.state_dict(), '../saved_model/emnist_model_state_dict.pth')

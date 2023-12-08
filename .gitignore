@@ -10,9 +10,11 @@ __pycache__/
 *$py.class
 
 # Data
-EMNIST/data
+EMNIST/src/data
 FashionMNIST/data
-CIFAR10/data
+CIFAR10/src/data/data
+PETS/data/data
+Pets/notebooks/data
 
 #ipynb checkpoints
 .ipynb_checkpoints

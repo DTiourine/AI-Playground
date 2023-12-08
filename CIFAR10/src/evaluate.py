@@ -1,5 +1,5 @@
 from CIFAR10.src.data.cifar10_data_loader import test_loader
-from cifar10_model import CIFAR10Net
+from model import CIFAR10Net
 from torch import nn
 import torch
 
