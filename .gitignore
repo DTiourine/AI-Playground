@@ -11,6 +11,7 @@ __pycache__/
 
 # Data
 EMNIST/src/data
+EMNIST/data/data
 FashionMNIST/data
 CIFAR10/src/data/data
 PETS/data/data
