@@ -1,7 +1,7 @@
 import torch
 from torch import nn
-from EMNIST.src.emnist_model import EMNISTNet
-from EMNIST.src.data.emnist_data_loader import train_loader
+from EMNIST.src.model import EMNISTNet
+from EMNIST.src.data.data_loader import train_loader
 
 #print(torch.cuda.is_available())
 EMNIST_Model = EMNISTNet()
