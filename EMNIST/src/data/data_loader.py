@@ -1,6 +1,13 @@
 import torch
+import os
 from torchvision import datasets, transforms
 from torch.utils.data import DataLoader
+
+# Get the directory in which data_loader.py is located
+base_path = os.path.dirname(__file__)
+
+# Define the path for the dataset relative to the location of data_loader.py
+dataset_path = os.path.join(base_path, 'data/data')
 
 # Define a transform to normalize the data
 transform = transforms.Compose([transforms.ToTensor(),
