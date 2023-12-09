@@ -10,7 +10,6 @@ __pycache__/
 *$py.class
 
 # Data
-EMNIST/src/data
 EMNIST/data/data
 FashionMNIST/data
 CIFAR10/src/data/data
