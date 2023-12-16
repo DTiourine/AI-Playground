@@ -1,1 +1,1 @@
-# Neural-Network-Playground
+# ML Starter Projects Playground 
