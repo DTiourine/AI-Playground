@@ -10,7 +10,6 @@ __pycache__/
 *$py.class
 
 # Data
-pytorch_neural_networks/EMNIST/data/EMNIST
 pytorch_neural_networks/EMNIST/src/data/
 pytorch_neural_networks/FashionMNIST/data
 pytorch_neural_networks/CIFAR10/src/data/data

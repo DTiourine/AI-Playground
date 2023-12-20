@@ -1,9 +1,9 @@
 import torch
 from torch import nn
-from EMNIST.src.model import EMNISTNet
-from EMNIST.src.data.data_loader import train_loader
+from model import EMNISTNet
+from data_loader import train_loader
 
-#print(torch.cuda.is_available())
+print(f'Cuda available: {torch.cuda.is_available()}')
 EMNIST_Model = EMNISTNet()
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")

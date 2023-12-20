@@ -1,5 +1,4 @@
 import torch.nn as nn
-import torch.nn.functional as F
 import torch
 
 class EMNISTNet(nn.Module):
@@ -8,19 +7,19 @@ class EMNISTNet(nn.Module):
         self.conv_block_1 = nn.Sequential(
             nn.Conv2d(1, 16, kernel_size=3, stride=1, padding=1),
             nn.BatchNorm2d(16),
-            nn.MaxPool2d(3),
+            nn.MaxPool2d(2),
             nn.ReLU()
         )
         self.conv_block_2 = nn.Sequential(
             nn.Conv2d(16, 32, kernel_size=3, stride=1, padding=1),
             nn.BatchNorm2d(32),
-            nn.MaxPool2d(3),
+            nn.MaxPool2d(2),
             nn.ReLU()
         )
         self.conv_block_3 = nn.Sequential(
             nn.Conv2d(in_channels=32, out_channels=64, kernel_size=3, stride=1, padding=0),
             nn.BatchNorm2d(64),
-            nn.MaxPool2d(3),
+            nn.MaxPool2d(2),
             nn.ReLU()
         )
 
@@ -37,6 +36,3 @@ class EMNISTNet(nn.Module):
         return x
 
 EMNISTModel = EMNISTNet()
-
-#dummy_input = torch.zeros((64, 1, 28, 28), dtype=torch.float32)
-#dummy_output = EMNISTModel(dummy_input)

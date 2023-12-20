@@ -1,4 +1,4 @@
-from EMNIST.src.data.data_loader import test_loader, train_loader
+from data_loader import test_loader, train_loader
 from model import EMNISTNet
 from torch import nn
 import torch
