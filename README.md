@@ -11,9 +11,9 @@ Each project focuses on different aspects of machine learning and deep learning,
 - **Description**: Implement a basic linear regression model to predict numerical values.
 - **Skills Learned**: Basic scikit-learn operations, model training, and evaluation.
 
-### 2. Image Classification with MNIST Dataset
+### 2. Image Classification
 - **Path**: `image-classification/`
-- **Description**: Build a convolutional neural network to classify handwritten digits from the MNIST dataset.
+- **Description**: Build a convolutional neural network to classify images on datsets like FashionMNIST, EMNIST, and CIFAR10
 - **Skills Learned**: Working with image data, CNNs, and PyTorch dataloaders.
 
 ### 3. Natural Language Processing Text Classification
