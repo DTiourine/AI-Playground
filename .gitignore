@@ -10,11 +10,11 @@ __pycache__/
 *$py.class
 
 # Data
-pytorch_neural_networks/EMNIST/src/data/
-pytorch_neural_networks/FashionMNIST/data
-pytorch_neural_networks/CIFAR10/src/data/data
-pytorch_neural_networks/PETS/data/data
-pytorch_neural_networks/Pets/notebooks/data
+image-classification/EMNIST/src/data/
+image-classification/FashionMNIST/data
+image-classification/CIFAR10/src/data/data
+image-classification/PETS/data/data
+image-classification/Pets/notebooks/data
 
 #ipynb checkpoints
 .ipynb_checkpoints
