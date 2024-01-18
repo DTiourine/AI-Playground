@@ -1,5 +1,3 @@
-# ML Learning Projects
-
 # Machine Learning and PyTorch Projects
 
 This repository contains a series of machine learning projects I developed using PyTorch and scikit-learn for my own personal learning and practice. The projects are designed to enhance understanding of machine learning algorithms and deep learning techniques, progressing from basic to advanced levels.
