@@ -6,7 +6,7 @@ This repository contains a series of machine learning projects I developed using
 
 Each project focuses on different aspects of machine learning and deep learning, demonstrating the application of various concepts and techniques using PyTorch.
 
-### 1. Linear Regression Model
+### 1. Linear Regression 
 - **Path**: `linear-regression/`
 - **Description**: Implement a basic linear regression model to predict numerical values.
 - **Skills Learned**: Basic scikit-learn operations, model training, and evaluation.
