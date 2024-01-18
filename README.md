@@ -7,10 +7,12 @@ This repository contains a series of machine learning projects I developed using
 Each project focuses on different aspects of machine learning and deep learning, demonstrating the application of various concepts and techniques using PyTorch.
 
 ### 1. Linear Regression Model
+- **Path**: `linear-regression/`
 - **Description**: Implement a basic linear regression model to predict numerical values.
 - **Skills Learned**: Basic scikit-learn operations, model training, and evaluation.
 
 ### 2. Image Classification with MNIST Dataset
+- **Path**: `image-classification/`
 - **Description**: Build a convolutional neural network to classify handwritten digits from the MNIST dataset.
 - **Skills Learned**: Working with image data, CNNs, and PyTorch dataloaders.
 
