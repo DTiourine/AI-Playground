@@ -1,7 +1,7 @@
 # Neural Network Architecture
 
 import torch.nn as nn
-class FMNISTModel(nn.Module):
+class FashionCNN(nn.Module):
 
     def __init__(self):
         super().__init__()
