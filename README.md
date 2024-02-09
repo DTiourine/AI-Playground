@@ -2,9 +2,24 @@
 
 This repository contains a series of neural network projects I implemented in PyTorch on beginner level datasets such as FashionMNIST, EMNIST, and CIFAR10. The primary goal is to get some hands-on practice with PyTorch and develop my skills, enabling me to familiarize myself with the framework and prepare for more advanced projects and challenges in machine learning and deep learning.
 
-## Image Classification
+## Classification
 
 Projects focusing on the application of convolutional neural networks (CNNs) and other techniques to classify images from various datasets.
 
-- **FashionMNIST Classifier**: Utilizes a CNN to classify fashion items.
-- **CIFAR10 Object Recognition**: Implements advanced neural architectures to recognize objects.
+### FashionMNIST Neural Network
+
+- **Objective**: Classify clothing items from the FashionMNIST dataset.
+- **Model**: Convolutional Neural Network (CNN).
+- **Key Concepts**: Image classification, CNN architecture, PyTorch basics.
+
+### EMNIST Letter Recognition
+
+- **Objective**: Recognize handwritten letters from the EMNIST dataset.
+- **Model**: CNN with advanced techniques like dropout and batch normalization.
+- **Key Concepts**: Handwritten character recognition, data augmentation, regularization.
+
+### CIFAR10 Image Classification
+
+- **Objective**: Classify objects from the CIFAR10 dataset into 10 categories.
+- **Model**: Deep CNN with techniques like ResNet architecture.
+- **Key Concepts**: Object classification, deep learning techniques, transfer learning.
