@@ -8,18 +8,18 @@ Projects focusing on the application of convolutional neural networks (CNNs) and
 
 ### FashionMNIST Neural Network
 
-- **Objective**: Classify clothing items from the FashionMNIST dataset.
-- **Model**: Convolutional Neural Network (CNN).
-- **Key Concepts**: Image classification, CNN architecture, PyTorch basics.
+- **Objective**: Classify clothing items from the FashionMNIST dataset
+- **Model**: Convolutional Neural Network (CNN)
+- **Key Concepts**: Image classification, CNN architecture, PyTorch basics
 
 ### EMNIST Letter Recognition
 
-- **Objective**: Recognize handwritten letters from the EMNIST dataset.
-- **Model**: CNN with advanced techniques like dropout and batch normalization.
-- **Key Concepts**: Handwritten character recognition, data augmentation, regularization.
+- **Objective**: Recognize handwritten letters from the EMNIST dataset
+- **Model**: Convolutional Neural Network (CNN)
+- **Key Concepts**: Handwritten character recognition, data augmentation, regularization
 
 ### CIFAR10 Image Classification
 
-- **Objective**: Classify objects from the CIFAR10 dataset into 10 categories.
-- **Model**: Deep CNN with techniques like ResNet architecture.
-- **Key Concepts**: Object classification, deep learning techniques, transfer learning.
+- **Objective**: Classify objects from the CIFAR10 dataset into 10 categories
+- **Model**: Convolutional Neural Network (CNN)
+- **Key Concepts**: Object classification, deep learning techniques, transfer learning
