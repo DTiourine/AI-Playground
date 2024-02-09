@@ -1,10 +1,10 @@
-from CIFAR10.src.data.cifar10_data_loader import test_loader
-from model import CIFAR10Net
+from CIFAR10.data.cifar10_data_loader import test_loader
+from CIFAR10.models.cifar10_net import CIFAR10Net
 from torch import nn
 import torch
 
 CIFAR10Model = CIFAR10Net()
-CIFAR10Model.load_state_dict(torch.load('../saved_model/CIFAR10Model_state_dict.pth'))
+CIFAR10Model.load_state_dict(torch.load('saved_model/CIFAR10Model_state_dict.pth'))
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 CIFAR10Model = CIFAR10Model.to(device)

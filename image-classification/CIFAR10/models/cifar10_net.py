@@ -1,6 +1,5 @@
 from torch import nn
 import torch
-
 class CIFAR10Net(nn.Module):
     def __init__(self):
         super(CIFAR10Net, self).__init__()
