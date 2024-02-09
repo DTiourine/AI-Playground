@@ -14,10 +14,12 @@ def compute_metrics(preds, labels):
     f1 = f1_score(labels, preds, average='macro')
     return accuracy, f1
 
-def train_model(model, training_loader, criterion, optimizer, epochs=10):
+def train_model(model, training_loader, criterion, optimizer, epochs=50):
     model.train()
     for epoch in range(epochs):
         running_loss = 0.0
+        all_preds = []
+        all_labels = []
         for images, labels in training_loader:
             optimizer.zero_grad()
             outputs = model(images)
@@ -26,7 +28,12 @@ def train_model(model, training_loader, criterion, optimizer, epochs=10):
             optimizer.step()
             running_loss += loss.item()
 
-        print(f"Epoch {epoch+1}, Loss: {running_loss/len(training_loader)}")
+            _, preds = torch.max(outputs, 1)
+            all_preds.extend(preds.cpu().numpy())
+            all_labels.extend(labels.cpu().numpy())
+
+        accuracy, f1 = compute_metrics(all_preds, all_labels)
+        print(f'Epoch {epoch+1}/{epochs}, Loss: {running_loss/len(training_loader)}, Accuracy: {accuracy*100:.2f}%, F1 Score: {f1:.2f}')
 
 def main():
     training_loader, test_loader = load_datasets('data')
