@@ -1,5 +1,5 @@
-from data_loader import test_loader, train_loader
-from model import EMNISTNet
+from EMNIST.utils.dataloader import test_loader, train_loader
+from EMNIST.models.emnist_net import EMNISTNet
 from torch import nn
 import torch
 

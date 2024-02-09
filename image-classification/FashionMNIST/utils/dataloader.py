@@ -1,5 +1,6 @@
 # utils/dataloader.py
 from torchvision import datasets, transforms
+from torch.utils.data import DataLoader
 import torch
 
 def load_datasets(data_dir='data'):
@@ -10,10 +11,10 @@ def load_datasets(data_dir='data'):
 
     # Download and load the training data
     training_set = datasets.FashionMNIST(data_dir, download=True, train=True, transform=transform)
-    training_loader = torch.utils.data.DataLoader(training_set, batch_size=64, shuffle=True)
+    training_loader = DataLoader(training_set, batch_size=64, shuffle=True)
 
     # Download and load the test data
     test_set = datasets.FashionMNIST(data_dir, download=True, train=False, transform=transform)
-    test_loader = torch.utils.data.DataLoader(test_set, batch_size=64, shuffle=True)
+    test_loader = DataLoader(test_set, batch_size=64, shuffle=True)
 
     return training_loader, test_loader

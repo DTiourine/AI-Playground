@@ -1,11 +1,10 @@
 import torch
 import torch.nn as nn
 import torch.optim as optim
-from models.cnn_model import FashionCNN
+from models.fashion_cnn import FashionCNN
 from utils.dataloader import load_datasets
 import numpy as np
 from sklearn.metrics import f1_score
-
 
 def compute_metrics(preds, labels):
     preds = np.array(preds)
@@ -42,7 +41,7 @@ def main():
     criterion = nn.CrossEntropyLoss()
     optimizer = optim.Adam(model.parameters(), lr=0.001)
 
-    train_model(model, training_loader, criterion, optimizer, epochs=10)
+    train_model(model, training_loader, criterion, optimizer, epochs=50)
 
     torch.save(model.state_dict(), 'trained_models/fashion_cnn.pth')
 
