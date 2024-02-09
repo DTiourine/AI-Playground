@@ -1,7 +1,5 @@
 import torch.nn as nn
-import torch.nn.functional as F
 
-# Define the CNN model
 class FashionCNN(nn.Module):
     def __init__(self):
         super(FashionCNN, self).__init__()
