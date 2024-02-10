@@ -45,3 +45,6 @@ def main():
     train_model(model, training_loader, criterion, optimizer, epochs=50)
 
     torch.save(model.state_dict(), 'trained_models/emnist_net.pth')
+
+if __name__ == "__main__":
+    main()
