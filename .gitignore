@@ -10,11 +10,10 @@
 *$py.class
 
 # Data
-image-classification/EMNIST/src/data/
-image-classification/FashionMNIST/data
-image-classification/CIFAR10/src/data/data
-image-classification/PETS/data/data
-image-classification/Pets/notebooks/data
+image-classification/EMNIST/data/
+image-classification/FashionMNIST/data/
+image-classification/CIFAR10/data/
+image-classification/PETS/data/
 
-#ipynb checkpoints
+#ipynb_checkpoints
 .ipynb_checkpoints

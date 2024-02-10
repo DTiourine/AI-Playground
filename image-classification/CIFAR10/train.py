@@ -7,7 +7,7 @@ import numpy as np
 from sklearn.metrics import f1_score
 
 def compute_metrics(pred, labels):
-    preds = np.array(preds)
+    preds = np.array(pred)
     labels = np.array(labels)
     accuracy = np.mean(preds == labels)
     f1 = f1_score(labels, preds, average='macro')
